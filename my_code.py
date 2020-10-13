@@ -1,15 +1,9 @@
-# Collaborators (including web sites where you got help: none
+# Collaborators including web sites where you got help: none
 #  Collaborators: Parker, Milan
 
 bank = 100000
-
-
-print("WELCOME TO FANTASAY FOOTBALL!")
-team_name = input("Enter your fantasay team name: ")
-for x in range(3):
-    print("GO!")
-    
-def choose_again(redo):
+ 
+def choose_again():
     #QB CHOICE
     print("I like it! Select your QB for this league: ")
     print("Lamar Jackson $17,000")
@@ -18,7 +12,7 @@ def choose_again(redo):
     print("Cam Newton $14,000")
     print("Tom Brady $15,000")
     QB_Pick = input()
-    while QB_Pick == 'Lamar Jackson' or QB_Pick == 'Patrick Mahomes' or QB_Pick =='Russell Wilson' or QB_Pick == 'Cam Newton' or QB_Pick == 'Tom Brady':
+    while True:     
         if QB_Pick == "Lamar Jackson":
             bank = 83000
             break
@@ -51,23 +45,31 @@ def choose_again(redo):
     print("Dalvin Cook $17,000")
     print("James Connor $15,000")
     RB_Pick = input()
-    while RB_Pick == "Christian Mcaffery" or RB_Pick == "Ezekiel Elliot" or RB_Pick == "Alvin Kamara" or RB_Pick == 'Derrick Henry' or RB_Pick == "Miles Sanders" or RB_Pick == 'Chris Carson' or RB_Pick == 'James Connor':
+    while True:
         if RB_Pick == "Christian Mcaffery":
             bank = int(bank) - 20000
+            break
         elif RB_Pick == "Ezekiel Elliot":
             bank = int(bank) - 17000
+            break
         elif RB_Pick == "Alvin Kamara":
             bank = int(bank) - 17000
+            break
         elif RB_Pick == "Derrick Henry":
             bank = int(bank) - 16000
+            break
         elif RB_Pick == "Miles Sanders":
             bank = int(bank) - 14000
+            break
         elif RB_Pick == "Chris Carson":
-            bank  = int(bank) - 15000
+            bank = int(bank) - 15000
+            break
         elif RB_Pick == "Dalvin Cook":
             bank = int(bank) - 17000
+            break
         elif RB_Pick == "James Connor":
             bank = int(bank) - 15000
+            break
         else:
             RB_Pick = input("Type RB name correctly please!")
     print("Good Choice!")
@@ -84,21 +86,28 @@ def choose_again(redo):
     print("Clyde Edward-Helaire $12000")
     print("James Robinson $12000")
     RB2_Pick = input()
-    while RB2_Pick == 'Melvin Gordon' or RB2_Pick == 'Raheem Mostert' or RB2_Pick == 'Todd Gurley' or RB2_Pick == 'Nick Chubb' or RB2_Pick == 'Kareem Hunt' or RB2_Pick == 'Clyde Edward-Helaire' or RB2_Pick == 'James Robinson':
+    while True:
         if RB2_Pick == 'Melvin Gordon':
             bank = int(bank) - 10000
+            break
         elif RB2_Pick == 'Raheem Mostert':
             bank = int(bank) - 7000
+            break
         elif RB2_Pick == 'Todd Gurley':
             bank = int(bank) - 9000
+            break
         elif RB2_Pick == 'Nick Chubb':
             bank = int(bank) - 11000
+            break
         elif RB2_Pick == 'Kareem Hunt':
             bank = int(bank) - 9000
+            break
         elif RB2_Pick == 'Clyde Edward-Helaire':
             bank = int(bank) - 12000
+            break
         elif RB2_Pick == "James Robinson":
             bank = int(bank) - 12000
+            break
         else:
             RB2_Pick = input("Type RB name correctly!")
     print("Good Choice!")
@@ -114,19 +123,25 @@ def choose_again(redo):
     print("Julio Jones $17000")
     print("Tyreek Hill $15000")
     WR1_Pick = input()
-    while WR1_Pick == 'DeAndre Hopkins' or WR1_Pick == 'Micheal Thomas' or WR1_Pick == 'Devante Adams' or WR1_Pick == 'Adam Thielen' or WR1_Pick == 'Julio Jones' or WR1_Pick == 'Tyreek Hill':
+    while True:
         if WR1_Pick == 'DeAndre Hopkins':
             bank = int(bank) - 17000
+            break
         elif WR1_Pick == 'Micheal Thomas':
             bank = int(bank) - 20000
+            break
         elif WR1_Pick == 'Devante Adams':
             bank = int(bank) - 19000
+            break
         elif WR1_Pick == 'Adam Thielen':
             bank = int(bank) - 16500
+            break
         elif WR1_Pick == 'Julio Jones':
             bank = int(bank) - 17000
+            break
         elif WR1_Pick == 'Tyreek Hill':
             bank = int(bank) - 15000
+            break
         else:
             WR1_Pick = input("Type WR name correctly!")
     print("Good Choice!")
@@ -146,27 +161,37 @@ def choose_again(redo):
     print("Mike Evans $12000")
     print("DK Metcalf $10000")
     WR2_Pick = input()
-    while WR2_Pick == 'Jamison Crowder' or WR2_Pick == 'Cooper Kupp' or WR2_Pick == 'Juju' or WR2_Pick == 'Tyler Boyd' or WR2_Pick == 'AJ Brown' or WR2_Pick == 'Stefon Diggs' or WR2_Pick == 'Amari Cooper' or WR2_Pick == 'Tyler Lockett' or WR2_Pick == 'Mike Evans' or WR2_Pick == 'DK Metcalf':
+    while True:
         if WR2_Pick == 'Jamison Crowder':
             bank = int(bank) - 10000
+            break
         elif WR2_Pick == 'Cooper Kupp':
             bank = int(bank) - 11000
+            break
         elif WR2_Pick == 'Juju':
             bank = int(bank) - 10000
+            break
         elif WR2_Pick == 'Tyler Boyd':
             bank = int(bank) - 9000
+            break
         elif WR2_Pick == 'AJ Brown':
             bank = int(bank) - 9000
+            break
         elif WR2_Pick == 'Stefon Diggs':
             bank = int(bank) - 11000
+            break
         elif WR2_Pick == 'Amari Cooper':
             bank = int(bank) - 13000
+            break
         elif WR2_Pick == 'Tyler Lockett':
             bank = int(bank) - 13000
+            break
         elif WR2_Pick == 'Mike Evans':
             bank = int(bank) - 12000
+            break
         elif WR2_Pick == 'DK Metcalf':
             bank = int(bank) - 10000
+            break
         else:
             WR2_Pick = input("Type WR name correctly!")
     print("Good Choice")
@@ -183,21 +208,28 @@ def choose_again(redo):
     print("Jimmy Graham $9000")
     print("Hunter Henry $10000")
     TE_Pick = input()
-    while TE_Pick == 'Travis Kelce' or TE_Pick == 'George Kittle' or TE_Pick == "Darren Waller" or TE_Pick == 'Mark Andrews' or TE_Pick == 'Zach Ertz' or TE_Pick == 'Jimmy Graham' or TE_Pick == 'Hunter Henry':
+    while True:
         if TE_Pick == 'Travis Kelce':
             bank = int(bank) - 15000
+            break
         elif TE_Pick == 'George Kittle':
             bank = int(bank) - 14000
+            break
         elif TE_Pick == 'Darren Waller':
             bank = int(bank) - 11000
+            break
         elif TE_Pick == 'Mark Andrews':
             bank = int(bank) - 12000
+            break
         elif TE_Pick == 'Zach Ertz':
             bank = int(bank) - 10000
+            break
         elif TE_Pick == 'Jimmy Graham':
             bank = int(bank) - 9000
+            break
         elif TE_Pick == 'Hunter Henry':
             bank = int(bank) - 10000
+            break
         else:
             TE_Pick = input("Type TE name correctly!")
     print("Good Choice!")
@@ -214,21 +246,28 @@ def choose_again(redo):
     print("Roberto Blankenship $9000")
     print("Chris Boswell $7000")
     K_Pick = input()
-    while K_Pick == 'Harrison Butker' or K_Pick == 'Will Lutz' or K_Pick == 'Stephen Gostkowski' or K_Pick == "Justin Tucker" or K_Pick == 'Greg Zurelein' or K_Pick == "Roberto Blankenship" or K_Pick == 'Chris Boswell':
+    while True:
         if K_Pick == 'Harrison Butker':
             bank = int(bank) - 10000
+            break
         elif K_Pick == 'Will Lutz':
             bank = int(bank) - 8000
+            break
         elif K_Pick == 'Stephen Gostkowski':
             bank = int(bank) - 7000
+            break
         elif K_Pick == 'Justin Tucker':
             bank = int(bank) - 9000
+            break
         elif K_Pick == 'Greg Zurelein':
             bank = int(bank) - 7000
+            break
         elif K_Pick == 'Roberto Blankenship':
             bank = int(bank) - 9000
+            break
         elif K_Pick == 'Chris Boswell':
             bank = int(bank) - 7000
+            break
         else:
             K_Pick = input("Type Kickers name correctly!")
     print("Good Choice!")
@@ -244,8 +283,30 @@ def choose_again(redo):
     print(K_Pick)
 
 if int(bank) < 0:
-    print(choose_again(redo))
+    choose_again()
 
+print("WELCOME TO FANTASAY FOOTBALL!")
+list_teams = ['Owls','Eagles','Falcons','Doves']
+print("Owls = 0")
+print("Eagles = 1")
+print("Falcons = 2")
+print("Doves = 3")
+team_name = input(list_teams)
+if team_name == '0':
+    print("Owls, Good Choice")
+    team_name = 'Owls'
+elif team_name == '1':
+    print("Eagles, Good choice")
+    team_name = 'Eagles'
+elif team_name == '2':
+    print("Falcons, good choice")
+    team_name = 'Falcons'
+elif team_name == '3':
+    print("Doves, Good Choice")
+    team_name = 'Doves'
+for x in range(3):
+    print("Go", team_name + "!")
+#QB Choice
 print("I like it! Select your QB for this league: ")
 print("Lamar Jackson $17,000")
 print("Patrick Mahomes $20,000")
@@ -253,7 +314,7 @@ print("Russell Wilson $16,000")
 print("Cam Newton $14,000")
 print("Tom Brady $15,000")
 QB_Pick = input()
-while QB_Pick == 'Lamar Jackson' or QB_Pick == 'Patrick Mahomes' or QB_Pick =='Russell Wilson' or QB_Pick == 'Cam Newton' or QB_Pick == 'Tom Brady':
+while True:
     if QB_Pick == "Lamar Jackson":
         bank = 83000
         break
@@ -286,23 +347,31 @@ print("Chris Carson $15,000")
 print("Dalvin Cook $17,000")
 print("James Connor $15,000")
 RB_Pick = input()
-while RB_Pick == "Christian Mcaffery" or RB_Pick == "Ezekiel Elliot" or RB_Pick == "Alvin Kamara" or RB_Pick == 'Derrick Henry' or RB_Pick == "Miles Sanders" or RB_Pick == 'Chris Carson' or RB_Pick == 'James Connor':
+while True:
     if RB_Pick == "Christian Mcaffery":
         bank = int(bank) - 20000
+        break
     elif RB_Pick == "Ezekiel Elliot":
         bank = int(bank) - 17000
+        break
     elif RB_Pick == "Alvin Kamara":
         bank = int(bank) - 17000
+        break
     elif RB_Pick == "Derrick Henry":
         bank = int(bank) - 16000
+        break
     elif RB_Pick == "Miles Sanders":
         bank = int(bank) - 14000
+        break
     elif RB_Pick == "Chris Carson":
         bank  = int(bank) - 15000
+        break
     elif RB_Pick == "Dalvin Cook":
         bank = int(bank) - 17000
+        break
     elif RB_Pick == "James Connor":
         bank = int(bank) - 15000
+        break
     else:
         RB_Pick = input("Type RB name correctly!")
 print("Good Choice!")
@@ -319,21 +388,28 @@ print("Kareem Hunt $9000")
 print("Clyde Edward-Helaire $12000")
 print("James Robinson $12000")
 RB2_Pick = input()
-while RB2_Pick == 'Melvin Gordon' or RB2_Pick == 'Raheem Mostert' or RB2_Pick == 'Todd Gurley' or RB2_Pick == 'Nick Chubb' or RB2_Pick == 'Kareem Hunt' or RB2_Pick == 'Clyde Edward-Helaire' or RB2_Pick == 'James Robinson':
+while True:
     if RB2_Pick == 'Melvin Gordon':
         bank = int(bank) - 10000
+        break
     elif RB2_Pick == 'Raheem Mostert':
         bank = int(bank) - 7000
+        break
     elif RB2_Pick == 'Todd Gurley':
         bank = int(bank) - 9000
+        break
     elif RB2_Pick == 'Nick Chubb':
         bank = int(bank) - 11000
+        break
     elif RB2_Pick == 'Kareem Hunt':
         bank = int(bank) - 9000
+        break
     elif RB2_Pick == 'Clyde Edward-Helaire':
         bank = int(bank) - 12000
+        break
     elif RB2_Pick == "James Robinson":
         bank = int(bank) - 12000
+        break
     else:
         RB2_Pick = input("Enter RB2 name correctly!")
 print("Good Choice!")
@@ -349,19 +425,25 @@ print("Adam Thielen $16500")
 print("Julio Jones $17000")
 print("Tyreek Hill $15000")
 WR1_Pick = input()
-while WR1_Pick == 'DeAndre Hopkins' or WR1_Pick == 'Micheal Thomas' or WR1_Pick == 'Devante Adams' or WR1_Pick == 'Adam Thielen' or WR1_Pick == 'Julio Jones' or WR1_Pick == 'Tyreek Hill':
+while True:
     if WR1_Pick == 'DeAndre Hopkins':
         bank = int(bank) - 17000
+        break
     elif WR1_Pick == 'Micheal Thomas':
         bank = int(bank) - 20000
+        break
     elif WR1_Pick == 'Devante Adams':
         bank = int(bank) - 19000
+        break
     elif WR1_Pick == 'Adam Thielen':
         bank = int(bank) - 16500
+        break
     elif WR1_Pick == 'Julio Jones':
         bank = int(bank) - 17000
+        break
     elif WR1_Pick == 'Tyreek Hill':
         bank = int(bank) - 15000
+        break
     else:
         WR1_Pick = input("Type WR name correctly!")
 print("Good Choice!")
@@ -381,27 +463,37 @@ print("Tyler Lockett $13000")
 print("Mike Evans $12000")
 print("DK Metcalf $10000")
 WR2_Pick = input()
-while WR2_Pick == 'Jamison Crowder' or WR2_Pick == 'Cooper Kupp' or WR2_Pick == 'Juju' or WR2_Pick == 'Tyler Boyd' or WR2_Pick == 'AJ Brown' or WR2_Pick == 'Stefon Diggs' or WR2_Pick == 'Amari Cooper' or WR2_Pick == 'Tyler Lockett' or WR2_Pick == 'Mike Evans' or WR2_Pick == 'DK Metcalf':
+while True:
     if WR2_Pick == 'Jamison Crowder':
         bank = int(bank) - 10000
+        break
     elif WR2_Pick == 'Cooper Kupp':
         bank = int(bank) - 11000
+        break
     elif WR2_Pick == 'Juju':
         bank = int(bank) - 10000
+        break
     elif WR2_Pick == 'Tyler Boyd':
         bank = int(bank) - 9000
+        break
     elif WR2_Pick == 'AJ Brown':
         bank = int(bank) - 9000
+        break
     elif WR2_Pick == 'Stefon Diggs':
         bank = int(bank) - 11000
+        break
     elif WR2_Pick == 'Amari Cooper':
         bank = int(bank) - 13000
+        break
     elif WR2_Pick == 'Tyler Lockett':
         bank = int(bank) - 13000
+        break
     elif WR2_Pick == 'Mike Evans':
         bank = int(bank) - 12000
+        break
     elif WR2_Pick == 'DK Metcalf':
         bank = int(bank) - 10000
+        break
     else:
         WR2_Pick = input("Type WR name correctly!")
 print("Good Choice")
@@ -418,21 +510,28 @@ print("Zach Ertz $10000")
 print("Jimmy Graham $9000")
 print("Hunter Henry $10000")
 TE_Pick = input()
-while TE_Pick == 'Travis Kelce' or TE_Pick == 'George Kittle' or TE_Pick == "Darren Waller" or TE_Pick == 'Mark Andrews' or TE_Pick == 'Zach Ertz' or TE_Pick == 'Jimmy Graham' or TE_Pick == 'Hunter Henry':
+while True:
     if TE_Pick == 'Travis Kelce':
         bank = int(bank) - 15000
+        break
     elif TE_Pick == 'George Kittle':
         bank = int(bank) - 14000
+        break
     elif TE_Pick == 'Darren Waller':
         bank = int(bank) - 11000
+        break
     elif TE_Pick == 'Mark Andrews':
         bank = int(bank) - 12000
+        break
     elif TE_Pick == 'Zach Ertz':
         bank = int(bank) - 10000
+        break
     elif TE_Pick == 'Jimmy Graham':
         bank = int(bank) - 9000
+        break
     elif TE_Pick == 'Hunter Henry':
         bank = int(bank) - 10000
+        break
     else:
         TE_Pick = input("Please type TE name correctly!")
 print("Good Choice!")
@@ -449,21 +548,28 @@ print("Greg Zurelein $7000")
 print("Roberto Blankenship $9000")
 print("Chris Boswell $7000")
 K_Pick = input()
-while K_Pick == 'Harrison Butker' or K_Pick == 'Will Lutz' or K_Pick == 'Stephen Gostkowski' or K_Pick == "Justin Tucker" or K_Pick == 'Greg Zurelein' or K_Pick == "Roberto Blankenship" or K_Pick == 'Chris Boswell':
+while True:    
     if K_Pick == 'Harrison Butker':
         bank = int(bank) - 10000
+        break
     elif K_Pick == 'Will Lutz':
         bank = int(bank) - 8000
+        break
     elif K_Pick == 'Stephen Gostkowski':
         bank = int(bank) - 7000
+        break
     elif K_Pick == 'Justin Tucker':
         bank = int(bank) - 9000
+        break
     elif K_Pick == 'Greg Zurelein':
         bank = int(bank) - 7000
+        break
     elif K_Pick == 'Roberto Blankenship':
         bank = int(bank) - 9000
+        break
     elif K_Pick == 'Chris Boswell':
         bank = int(bank) - 7000
+        break
     else:
         K_Pick = input("Type Kickers name cooretly!")
 print("Good Choice!")
