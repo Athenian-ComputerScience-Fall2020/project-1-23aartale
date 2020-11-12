@@ -1,9 +1,30 @@
 # Collaborators including web sites where you got help: none
 #  Collaborators: Parker, Milan
 
-bank = 100000
- 
-def choose_again():
+
+def play_game():
+    bank = 100000
+    print("WELCOME TO FANTASAY FOOTBALL! Choose your team by selecting the number assigned to them.")
+    list_teams = ['Owls', 'Eagles', 'Falcons', 'Doves']
+    print("Owls = 0")
+    print("Eagles = 1")
+    print("Falcons = 2")
+    print("Doves = 3")
+    team_name = input(list_teams)
+    if team_name == '0':
+        print("Owls, Good Choice")
+        team_name = 'Owls'
+    elif team_name == '1':
+        print("Eagles, Good choice")
+        team_name = 'Eagles'
+    elif team_name == '2':
+        print("Falcons, good choice")
+        team_name = 'Falcons'
+    elif team_name == '3':
+        print("Doves, Good Choice")
+        team_name = 'Doves'
+    for x in range(3):
+        print("Go", team_name + "!")
     #QB CHOICE
     print("I like it! Select your QB for this league: ")
     print("Lamar Jackson $17,000")
@@ -282,31 +303,8 @@ def choose_again():
     print(TE_Pick)
     print(K_Pick)
 
-if int(bank) < 0:
-    choose_again()
-
 def redo():
-    print("WELCOME TO FANTASAY FOOTBALL!")
-    list_teams = ['Owls','Eagles','Falcons','Doves']
-    print("Owls = 0")
-    print("Eagles = 1")
-    print("Falcons = 2")
-    print("Doves = 3")
-    team_name = input(list_teams)
-    if team_name == '0':
-        print("Owls, Good Choice")
-        team_name = 'Owls'
-    elif team_name == '1':
-        print("Eagles, Good choice")
-        team_name = 'Eagles'
-    elif team_name == '2':
-        print("Falcons, good choice")
-        team_name = 'Falcons'
-    elif team_name == '3':
-        print("Doves, Good Choice")
-        team_name = 'Doves'
-    for x in range(3):
-        print("Go", team_name + "!")
+    bank = 100000
     #QB Choice
     print("I like it! Select your QB for this league: ")
     print("Lamar Jackson $17,000")
@@ -576,7 +574,7 @@ def redo():
     print("Good Choice!")
     print("You currently have " + str(bank) + " left in your bank")
 
-    print("Team", team_name, "looks like:" )
+    print("Your team looks like:")
     print(QB_Pick)
     print(RB_Pick)
     print(RB2_Pick)
@@ -585,10 +583,12 @@ def redo():
     print(TE_Pick)
     print(K_Pick)
 
+play_game()
+
 while True:
-    redo = input('Want to play again? y/n: ')
-    if redo == 'y':
+    redo2 = input('Want to play again? y/n: ')
+    if redo2 == 'y':
             redo()
-    elif redo == 'n':
-            print("Goodbye")
-            break
+    elif redo2 == 'n':
+        print("Goodbye")
+        break
